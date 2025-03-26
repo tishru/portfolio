@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Experience - Shruti Wakchoure</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,600">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: "Montserrat", sans-serif;
+      background-color: #101010;
+      color: #f0f0f0;
+    }
+
+    .nav-bar {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 20px 0;
+      background-color: #1a1a1a;
+      border-bottom: 2px solid #333;
+    }
+
+    .nav-bar a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 18px;
+      padding: 12px 24px;
+      font-weight: 600;
+      border-radius: 8px;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    .nav-bar a:hover {
+      background-color: #2e2e2e;
+      transform: scale(1.05);
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+
+    .edu-header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .edu-header h2 {
+      font-size: 2.2em;
+      font-weight: 600;
+      color: #ffffff;
+    }
+
+    .experience-card {
+      display: flex;
+      flex-direction: column;
+      background-color: #181818;
+      padding: 25px;
+      border-left: 4px solid #00CFFF;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+    }
+
+    .experience-card:hover {
+      box-shadow: 0 4px 20px rgba(0, 207, 255, 0.1);
+    }
+
+    .exp-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 10px;
+    }
+
+    .exp-role {
+      font-size: 1.2em;
+      font-weight: 600;
+      color: #ffffff;
+    }
+
+    .exp-date {
+      font-size: 0.95em;
+      color: #aaaaaa;
+    }
+
+    .exp-company {
+      font-size: 1em;
+      color: #cccccc;
+      margin-bottom: 12px;
+    }
+
+    .exp-description {
+      font-size: 0.95em;
+      color: #dddddd;
+      line-height: 1.6;
+    }
+
+    @media screen and (max-width: 600px) {
+      .nav-bar {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="nav-bar">
+    <a href="index.html">Home</a>
+    <a href="index.html#about">About</a>
+    <a href="education.html">Education</a>
+    <a href="projects.html">Projects</a>
+  </div>
+
+  <div class="container">
+    <div class="edu-header">
+      <h2>Experience</h2>
+    </div>
+
+    <div class="experience-card">
+      <div class="exp-header">
+        <div class="exp-role">Data Analyst</div>
+        <div class="exp-date">Aug 2021 – Aug 2023</div>
+      </div>
+      <div class="exp-company">Tata Consultancy Services Ltd. — Pune, India</div>
+      <div class="exp-description">
+        Developed and deployed scalable ETL pipelines using PySpark to transform raw batch data into structured formats, reducing processing time by 20%. Conducted in-depth exploratory data analysis (EDA) on over 1M records, surfacing hidden trends that improved cross-team decisions by 30%. Leveraged SQL and machine learning models to enhance feature engineering and streamline reporting workflows. Designed and delivered interactive dashboards in Tableau and Power BI, boosting stakeholder engagement by 40% across operations in the US, Canada, and Australia.
+      </div>
+    </div>
+
+    <div class="experience-card">
+      <div class="exp-header">
+        <div class="exp-role">Internship Trainee</div>
+        <div class="exp-date">May 2019 – July 2019</div>
+      </div>
+      <div class="exp-company">Salunke Automation Pvt Ltd. — Nashik, India</div>
+      <div class="exp-description">
+        Gained hands-on experience in control panel manufacturing and operation, working closely with single-line diagrams and wiring schematics. Ensured adherence to electrical safety standards and supported configuration of control panels, including correct installation and functionality of components like relays and Programmable Logic Controllers (PLCs).
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
