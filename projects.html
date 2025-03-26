@@ -3,111 +3,156 @@
 <head>
   <meta charset="UTF-8">
   <title>Projects - Shruti Wakchoure</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="style.css">
-  <style>
 
-    body, h1, h2, h3, h4, h5, h6, p {
-     font-family: "Montserrat", sans-serif;
+  <style>
+    body {
+      font-family: "Montserrat", sans-serif;
+      background-color: #101010;
+      color: #f0f0f0;
+      margin: 0;
     }
+
+    /* Navigation Bar */
+    .nav-bar {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 20px 0;
+      background-color: #1a1a1a;
+      border-bottom: 2px solid #333;
+    }
+
+    .nav-bar a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 18px;
+      padding: 12px 24px;
+      font-weight: 600;
+      border-radius: 8px;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    .nav-bar a:hover {
+      background-color: #2e2e2e;
+      transform: scale(1.05);
+    }
+
+    h2 {
+      text-align: center;
+      color: #f0f0f0;
+      margin-top: 50px;
+      font-size: 2.2em;
+      font-weight: 600;
+    }
+
     .project-container {
       display: flex;
       flex-wrap: wrap;
       gap: 30px;
       justify-content: center;
+      padding: 50px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
     }
+
     .project-card {
       width: 300px;
-      background-color: #111;
+      background-color: #181818;
       color: white;
-      border-radius: 10px;
+      border-radius: 12px;
       padding: 20px;
       text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s, box-shadow 0.3s;
     }
+
+    .project-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 20px rgba(255, 255, 255, 0.08);
+    }
+
     .project-card img {
       width: 100%;
+      height: 180px;
+      object-fit: cover;
       border-radius: 10px;
       cursor: pointer;
     }
+
     .project-card h3 {
       margin-top: 15px;
       font-size: 18px;
+      color: #00CFFF;
     }
+
     .project-card p {
       font-size: 14px;
       color: #bbb;
+      margin-top: 8px;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .nav-bar {
+        flex-direction: column;
+        gap: 10px;
+      }
     }
   </style>
 </head>
-<body class="w3-black">
+<body>
 
-    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-        <p>HOME</p>
-      </a>
+  <!-- Navigation Bar -->
+  <div class="nav-bar">
+    <a href="index.html">HOME</a>
+    <a href="index.html#about">ABOUT</a>
+    <a href="index.html#experience">EXPERIENCE</a>
+    <a href="education.html">EDUCATION</a>
+    <a href="projects.html">PROJECTS</a>
+  </div>
 
-      <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-        <p>ABOUT</p>
-      </a>
-
-      <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-        <p>EXPERIENCE</p>
-      </a>
-
-      <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-        <p>EDUCATION</p>
-      </a>
-
-      
-      
-
-<div class="w3-content w3-padding-64" style="max-width:1200px">
-  <h2 class="w3-center w3-text-light-grey">PROJECTS</h2>
-  
+  <h2>Projects</h2>
 
   <div class="project-container">
-
     <!-- Project 1 -->
-<div class="project-card">
-    <a href="https://wakchoure12shruti.wixsite.com/mlproject" target="_blank">
-      <img src="images/mlproject.jpeg" alt="ML App Success">
-    </a>
-    <h3>Machine Learning for Mobile App Success</h3>
-    <p>This project leverages machine learning and data mining techniques to analyze and predict mobile app success using Google Play Store data.</p>
-  </div>
-  
-  
+    <div class="project-card">
+      <a href="https://wakchoure12shruti.wixsite.com/mlproject" target="_blank">
+        <img src="images/mlproject.jpeg" alt="ML App Success">
+      </a>
+      <h3>Machine Learning for Mobile App Success</h3>
+      <p>This project uses ML and data mining to predict mobile app performance from Google Play Store data.</p>
+    </div>
 
     <!-- Project 2 -->
     <div class="project-card">
       <a href="https://github.com/tishru/Stats-Car-Crash-Analysis" target="_blank">
-        <img src="images/cars.png" alt="Statistical Analysis of U.S. Car Crashes">
+        <img src="images/cars.png" alt="Car Crash Stats">
       </a>
       <h3>Statistical Analysis of U.S. Car Crashes</h3>
-      <p>This project applies statistical analysis and hypothesis testing to investigate key factors contributing to U.S. car crashes in 2021 using R.</p>
+      <p>Applied statistical testing in R to uncover key contributors to road accidents in 2021.</p>
     </div>
 
     <!-- Project 3 -->
     <div class="project-card">
-        <a href="https://public.tableau.com/app/profile/shruti.wakchoure/vizzes" target="_blank">
-            <img src="images/dashboards.png" alt="Data Dashboards">
-        </a>
-         <h3>Data Dashboards</h3>
-        <p>A collection of dashboards I've created using Tableau, where I explore datasets and present insights through clean, interactive visualizations.</p>
-    </div> 
+      <a href="https://public.tableau.com/app/profile/shruti.wakchoure/vizzes" target="_blank">
+        <img src="images/dashboards.png" alt="Data Dashboards">
+      </a>
+      <h3>Data Dashboards</h3>
+      <p>A collection of Tableau dashboards exploring real-world data through visual storytelling.</p>
+    </div>
 
     <!-- Project 4 -->
     <div class="project-card">
-        <a href="https://github.com/tishru/DataMining_Project" target="_blank">
-            <img src="images/cltv.png" alt="CLTV Clustering Project">
-         </a>
-            <h3>Predicting Customer Lifetime Value in E-commerce</h3>
-        <p>Predicted customer lifetime value using machine learning and clustering methods to drive strategic marketing and retention decisions.</p>
-     </div>
-  
-
-
+      <a href="https://github.com/tishru/DataMining_Project" target="_blank">
+        <img src="images/cltv.png" alt="CLTV Clustering Project">
+      </a>
+      <h3>Predicting Customer Lifetime Value</h3>
+      <p>ML-based prediction of CLTV using clustering and regression to enhance e-commerce strategies.</p>
+    </div>
+  </div>
 
 </body>
 </html>
